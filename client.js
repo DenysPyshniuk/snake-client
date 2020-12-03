@@ -1,8 +1,9 @@
 const net = require('net')
+const { IP, PORT } = require("./constants");
 const connect = function() {
   const conn = net.createConnection({
-    host: "135.23.222.131",
-    port: 50542,
+    IP: "135.23.222.131",
+    PORT: 50542,
   });
   // interpret incoming data as text
   conn.setEncoding("utf8");
